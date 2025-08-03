@@ -11,6 +11,12 @@
     <meta name="keywords" content="ECOLOGICO, Sabonete, ODS, Sustentavel, PureSoap, ECO">
     <meta name="robots" content="index">
     <meta name="rating" content="general">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>PureSoap</title>
 </head>
 <body>
@@ -26,6 +32,7 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+        <a href=""></a>
     </header>
     <main>
         <section id="inicio">
@@ -48,13 +55,28 @@
           
         <section id="produtos">
             <div class="produtosContainer">
-                <div class="produto">
+
+                <h1>Nossos sabonetes são produzidos artesanalmente com 3 fragrâncias naturais cuidadosamente selecionadas: lavanda calmante, hortelã refrescante e capim-limão revitalizante. Cada aroma é extraído de óleos essenciais puros, livres de conservantes e aditivos sintéticos.</h1>
+
+                <div class="produto" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="3000">
+
                     <h2>Lavanda Calmante</h2>
-                    <img src="" alt="">
+                    <img src="/assets/images/Lavanda.png" alt="Sabonete Lavanda Calmante"data-aos="fade-down"data-aos-duration="4000">
+
+                     <h2>Capim-Limão Revitalizante</h2>
+                    <img src="/assets/images/Capim limão.png" alt="Sabonete Capim-Limão Revitalizante" data-aos="fade-right"data-aos-duration="4250">
+
+                     <h2>Hortelã Refrescante</h2>
+                    <img src="/assets/images/Hortela.png" alt="Sabonete Hortelã Refrescante" data-aos="fade-left"data-aos-duration="4500">
                 </div>
             </div>
            
         </section>
     </main>
+    <script>
+  AOS.init();
+</script>
 </body>
 </html>
