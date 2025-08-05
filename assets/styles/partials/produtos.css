@@ -6,23 +6,41 @@
       -moz-border-radius: 20px;
       -ms-border-radius: 20px;
       -o-border-radius: 20px;
+      background: #1e172cd3;
+
 }
 
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #1e172cd3;
       /* Colocar uma imagem de fundo para o swiper */
       /* background-image: url(/PureSoap-Project/assets/images/mainbanner.jpg); */
       display: flex;
-      justify-content: center;
+     justify-content: center;
+      flex-direction: column;
+    }
+
+    .nomeProduto {
+      display: flex;
       align-items: center;
+      justify-content: center;
+      flex-direction: row-reverse;
+    }
+
+    .swiper-slide a {
+      display: flex;
+      flex-direction: column;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      border: 1px solid #ffffff;
+      width: 180px;
+      justify-self: center;
     }
 
     .swiper-slide img {
-      /* display: block; */
       width: 30%;
-      height: 90%;
+      height: 80%;
       object-fit: cover;
     }
 
