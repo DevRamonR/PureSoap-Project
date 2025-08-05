@@ -1,0 +1,25 @@
+#Contato{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+
+#Contato button[type="submit"] {
+  background-color: #7014bb;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#Contato button[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #7014bb;
+  font-weight: bold;
+}
