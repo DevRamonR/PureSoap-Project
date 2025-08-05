@@ -1,0 +1,33 @@
+.swiper {
+      width: 90%;
+      height: 500px;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+}
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #1e172cd3;
+      /* Colocar uma imagem de fundo para o swiper */
+      /* background-image: url(/PureSoap-Project/assets/images/mainbanner.jpg); */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      /* display: block; */
+      width: 30%;
+      height: 90%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+

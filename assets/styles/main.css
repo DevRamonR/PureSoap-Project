@@ -2,37 +2,7 @@
 @import url(./partials/variaveis.css);
 @import url(./partials/header.css);
 @import url(./partials/inicio.css);
-
-.produtosContainer {
-    width: 100%;
-    display: flex;
-    background: radial-gradient(circle farthest-side at right center, #f5ecec 5%, #7b00c4 100%);
-}
-
-
- .produtos h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    padding: 30px;
-    text-align: center;
-}
-
-.produto h2 {
-
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-.produto img {
-    margin-top: 10px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    justify-content: space-around;
-
-}
+@import url(./partials/sobre.css);
+@import url(./partials/produtos.css);
+@import url(./partials/contato.css);
+@import url(./partials/footer.css);
