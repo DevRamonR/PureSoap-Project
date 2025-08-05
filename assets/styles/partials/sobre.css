@@ -1,0 +1,21 @@
+* {
+    width: 100%;
+    padding: 2px;
+    background-image: url(./assets/images/fundo-sobre.png);
+}
+
+p {
+    margin-top: 20px;
+    font-size: 600;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #5d3a9b;
+}
+
+h2 {
+    color: #5d3a9b;
+}
