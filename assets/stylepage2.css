@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", Times New Roman, Times, serif;
+    background-color: #5d3a9b; /* Roxo */
+    color: #ffffff; /* Branco */
+}
+
+.formularioContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;  
+    padding: 50px;  
+}
+
+.formularioContainer h1{
+    margin-top: 60px;
+    
+}
+.formularioHeader{
+    width: 70%;
+    padding: 10px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+.formularioHeader input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid #5d3a9b;
+    padding: 14px 40px;
+    outline: none;
+    color: #1e172cd3; /*Roxobemescurocomopacidadebaixa*/
+    border-radius:24px;
+    -webkit-border-radius:240px;
+    -moz-border-radius:240px;
+    -ms-border-radius:240px;
+    -o-border-radius:240px;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+    cursor: pointer;
+}
+
+.formularioHeader input[type = "submit"]:hover{
+    background: #5d3a9b;
+    
+}
+
+.formularioHeader p{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+ 
+
+
