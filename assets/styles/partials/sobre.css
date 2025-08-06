@@ -1,16 +1,40 @@
-* {
-    width: 100%;
-    padding: 2px;
+
+
+#sobre hr {
+    display: flex;
+    justify-self: center;
+    width: 700px;
+    margin-top: 30px;
+    background-color: #5d3a9b;
+    border: solid 1px #5d3a9b;
+    border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    -ms-border-radius: 90px;
+    -o-border-radius: 90px;
 }
 
-.sobreContainer{
+.sobreContainer {
     display: flex;
     flex-direction: row;
-    padding: 32px 40px;
-    gap: 48px;
+    align-items: center;
+    padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
 
+.sobreOutdoor{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 32px 40px;
+    max-width: 1200px;
+}
+
+
+.logoEmpresa img{
+    width: 480px;
+    height: 80%;
 }
 
 p {
@@ -30,9 +54,4 @@ h3 {
 h2 {
     color: #5d3a9b;
     text-align: center;
-}
-
-.logoEmpresa img{
-    width: 105%;
-    height: 80%;
 }

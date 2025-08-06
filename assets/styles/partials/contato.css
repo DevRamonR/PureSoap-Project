@@ -1,25 +1,32 @@
-#Contato{
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #808080;
-    border-radius: 5px;
+#contato{
+  background-image: url(/assets/images/background-contato.webp);
+ 
+}
+.contatoContainer {
+ margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
-#Contato button[type="submit"] {
+#contato button[type="submit"] {
   background-color: #7014bb;
   color: #ffffff;
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
-#Contato button[type="submit"]:hover {
-  background-color: #ffffff;
-  color: #7014bb;
-  font-weight: bold;
+#contato button[type="submit"]:hover {
+  background-color: #270742;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

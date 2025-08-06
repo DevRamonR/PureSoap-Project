@@ -3,12 +3,10 @@
   color: #fff;
   text-align: center;
   margin-top: 20px;
-  padding: 15px 0;
+  padding: 15px ;
   bottom: 0;
-  left: 0;
-  height: 110px;
   width: 100%;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+  box-shadow: 0 -2px 5px #0000001a; /* Adiciona uma sombra */
 }
 
 .footer p{

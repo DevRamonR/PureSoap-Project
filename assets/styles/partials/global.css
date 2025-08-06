@@ -3,9 +3,28 @@
     margin: 0;
     font-family: "Georgia", Times New Roman, Times, serif;
     text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--corFundo);
 }
 
 * a {
     color: inherit;
     text-decoration: none;  
+}
+
+hr {
+    display: flex;
+    justify-self: center;
+    height: 2px;
+    width: 700px;
+    margin-top: 30px;
+    background-color: #5d3a9b;
+    border: solid 1px #5d3a9b;
+    border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    -ms-border-radius: 90px;
+    -o-border-radius: 90px;
+    margin-bottom: 20px;
 }
