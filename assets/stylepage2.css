@@ -16,14 +16,8 @@ body{
 
 .formularioHeader{
     display: flex;
- 
     align-items: center;
 }
-    
-   
-    
-
-
     
 .box{
     width: 70%;
@@ -78,10 +72,10 @@ body{
     background: #7fffd4; /* Verde água */
     
 }
-/*.formularioHeader p{
+.formularioHeader p{
     margin-top: 10px;
     margin-bottom: 30px;
-    background-color: #5d3a9b; /* Roxo */
+    background-color: #5d3a9b; /* Roxo */}
 
 /*.formularioHeader{
     width: 70%;
@@ -126,10 +120,4 @@ body{
     text-transform: uppercase;
     font-weight: 500;
 }
-
-
-
-
- 
-
 
