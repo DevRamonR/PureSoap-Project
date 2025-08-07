@@ -10,10 +10,25 @@ header {
     z-index: 1000;
 }
 
+
 .headerLogo {
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+.headerLogo p {
+    font-size: 24px;
+    color: var(--cor-texto-claro);
+    margin-left: 10px;
+    font-weight: 600
+}
+
+.headerLogo span {
+    background: linear-gradient(90deg,rgba(141, 103, 207, 1) 35%, rgb(93, 0, 255) 72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 #logo {

@@ -1,7 +1,71 @@
+/* Aqui começa a parte dos produtos */
+#produtos {
+  background-color: #ffffff;
+  height: 730px;
+}
+
+.produtosContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.missaoVisao {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  padding: 20px;
+  font-size: large;
+}
+
+.missaoVisao h3 {
+  background: linear-gradient(90deg,rgb(93, 0, 255) 35%, rgb(0, 42, 255) 72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.missaoVisao p {
+  color: var(--cor-texto-escuro);
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.missao {
+  margin-bottom: 20px;
+}
+
+.visao {
+  margin-top: 40px;
+}
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.produtos h2 {
+  color: var(--cor-texto-escuro);
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 20px;
+  
+} 
+/* Aqui termina */
+
+
+/* Aqui começa o swiper */
 .swiper {
       margin-bottom: 20px;
-      width: 90%;
-      height: 500px;
+      width: 100%;
+      height: 530px;
       border-radius: 20px;
       -webkit-border-radius: 20px;
       -moz-border-radius: 20px;
@@ -25,23 +89,44 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: row-reverse;
+      flex-direction: column-reverse;
     }
+
+    .nomeProduto h3 {
+      color: #ffffff;
+      font-size: 40px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .nomeProduto a {
+      color: #5d3a9b;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px 10px;
+      background-color: #ffffff;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+}
 
     .swiper-slide a {
       display: flex;
       flex-direction: column;
-      color: #ffffff;
+      color: #5d3a9b;
       font-size: 24px;
       font-weight: bold;
       border: 1px solid #ffffff;
-      width: 180px;
+      width: 280px;
       justify-self: center;
     }
 
     .swiper-slide img {
-      width: 30%;
-      height: 80%;
+      width: 40%;
+      height: 67%;
       object-fit: cover;
     }
 
@@ -49,7 +134,4 @@
       margin-left: auto;
       margin-right: auto;
     }
-.produtosContainer h4{
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
+

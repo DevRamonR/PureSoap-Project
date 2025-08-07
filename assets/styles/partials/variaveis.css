@@ -5,8 +5,10 @@
   --cor-terciaria: #1e172cd3; 
   --cor-texto-claro: #ffffff;
   --cor-texto-escuro: #333333;
+  --cor-texto-especial: background: linear-gradient(90deg,rgba(141, 103, 207, 1) 35%, rgb(93, 0, 255) 72%);
   --cor-fundo: #f9f9f9;
   --cor-borda: #E0E0E0;
+
 
   --tamanho-fonte-base: 16px;
   --tamanho-fonte-titulo: 24px;
