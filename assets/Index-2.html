@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
     <link rel="stylesheet" href="stylepage2.css">
 </head>
+
 <body>
     <div class="formularioContainer">
         <img src="./images/logo2.png" alt="PureSoap Logo" id="logo">
@@ -16,34 +18,72 @@
         <h1>Quero ser Parceiro <span>Pure Soap</span></h1>
 
         <div class="formularioHeader">
-            <p>Preencha o formulário abaixo para se tornar um parceiro Pure Soap e ajude a promover a sustentabilidade e o cuidado com a pele.</p>
-            
-        <form action="Index-3.html" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <p>Preencha o formulário abaixo para se tornar um parceiro Pure Soap e ajude a promover a sustentabilidade e
+                o cuidado com a pele.</p>
 
-            <label for="whatsapp">WhatsApp:</label>
-            <input type="number" id="whatsapp" name="whatsapp" required>
+            <form class="box" action="Index-3.html" method="post">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
 
-            <label for="cidade">Cidade:</label>
-            <input type="text" id="cidade" name="cidade" required>
+                <label for="whatsapp">WhatsApp:</label>
+                <input type="tel" id="whatsapp" name="whatsapp" required pattern="[0-9]{10,15}" placeholder="(99) 99999-9999">
 
-            <label for="estado">Estado:</label>
-            <input type="text" id="estado" name="estado" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu email">
 
-            <label for="produto">Produto:</label>
-            <input type="text" id="produto" name="produto" required>
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required placeholder="Digite sua cidade">
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem aqui..."></textarea>
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="">Selecione</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+              
+                <label for="materiaPrima">MateriaPrima:</label>
+                <select name="materiaPrima" id="materiaPrima">
+                    <option value="">Selecione</option>
+                    <option value="Lavanda">Lavanda</option>
+                    <option value="Hortela">Hortelã</option>
+                    <option value="Capim-limao">Capim-limão</option>
+                </select>
 
-            <button type="submit">Enviar</button>
-        </form>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem aqui..."></textarea>
 
-    </div>
-    
+                <button type="submit">Enviar</button>
+
+            </form>
+
+        </div>
+
 </body>
+
 </html>

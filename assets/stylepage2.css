@@ -1,4 +1,4 @@
-*{
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,18 +9,81 @@
 
 .formularioContainer{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     justify-content: center;
-    height: 100vh;  
-    padding: 50px;  
+    align-content:flex-start ;
+
 }
 
-.formularioContainer h1{
-    margin-top: 60px;
+.formularioHeader{
+    display: flex;
+ 
+    align-items: center;
+}
+    
+   
+    
+
+
+    
+.box{
+    width: 70%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    justify-content: space-evenly;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.box [type = "text"]:focus,
+.box [type = "email"]:focus,
+.box [type = "tel"]:focus
+/*.box select:focus,
+.box textarea:focus*/ {
+   width: 280px;
+   border-color: #7fffd4;
+}
+.box [type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:2px solid #7fffd4; /* Verde água */
+    padding: 14px 40px;
+    outline: none;
+    color: #ffffff; 
+    border-radius:24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+#mensagem{
+    width: 20%;
+    height: 100px;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #5d3a9b;
+    resize: none;
+}
+.box [type = "submit"]:hover{
+    background: #7fffd4; /* Verde água */
     
 }
-.formularioHeader{
+/*.formularioHeader p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #5d3a9b; /* Roxo */
+
+/*.formularioHeader{
     width: 70%;
     padding: 10px;
     position: absolute;
@@ -40,7 +103,7 @@
     padding: 14px 40px;
     outline: none;
     color: #1e172cd3; /*Roxobemescurocomopacidadebaixa*/
-    border-radius:24px;
+   /* border-radius:24px;
     -webkit-border-radius:240px;
     -moz-border-radius:240px;
     -ms-border-radius:240px;
@@ -63,6 +126,9 @@
     text-transform: uppercase;
     font-weight: 500;
 }
+
+
+
 
  
 
