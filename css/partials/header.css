@@ -1,0 +1,71 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--altura-header);
+    padding: 0 2%;
+    background-color: var(--cor-primaria);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.headerLogo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 170px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav a {
+    color: var(--cor-texto-claro);
+    font-weight: var(--peso-fonte-semibold);
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+nav a:not(.LoginButton):hover {
+    color: var(--cor-secundaria);
+}
+
+nav a:not(.LoginButton)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-secundaria);
+    transition: width 0.3s ease;
+}
+
+nav a:not(.LoginButton):hover::after {
+    width: 100%;
+}
+
+.LoginButton {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    padding: 8px 20px;
+    border-radius: var(--raio-borda);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.LoginButton:hover {
+    background-color: transparent;
+    border-color: var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    transform: translateY(-2px);
+}

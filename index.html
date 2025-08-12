@@ -1,57 +1,159 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/styles/main.css">
+    <title>PureSoap - Sabonetes Naturais Artesanais</title>
     <meta name="description" content="PureSoap é um sabonete ecológico feito com ingredientes naturais, ideal para quem busca uma opção sustentável e saudável para a pele.">
+    <meta name="keywords" content="sabonete ecológico, sabonete natural, sustentabilidade, PureSoap">
+    <meta name="robots" content="index, follow">
     <meta http-equiv="content-language" content="pt-br">
-    <meta http-equiv="content-type" content="text/hmtl"; charset="UTF-8">
-    <meta name="copyright" content="© 2025 Ramon Rangel, Patrick Rosa, Vanderson Monteiro, Thiago Souza">
-    <meta name="keywords" content="ECOLOGICO, Sabonete, ODS, Sustentavel, PureSoap, ECO">
-    <meta name="robots" content="index">
-    <meta name="rating" content="general">
-    <title>PureSoap</title>
+    <meta name="copyright" content="© 2025 PureSoap Team">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
     <header>
-        <img src="./assets/images/puresoap.svg" alt="PureSoap Logo" id="logo">
+        <a href="#inicio" class="headerLogo">
+            <img src="img/logo.svg" alt="PureSoap Logo" id="logo">
+        </a>
         <nav>
             <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a href="login.html" class="LoginButton">Login</a></li>
             </ul>
         </nav>
+        <div id="menu-hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+
     <main>
         <section id="inicio">
-            <img src="./assets/images/main banner.jpg" alt="" class="mainBanner">
-            <div class="inicioOutdoor">
-                <h1>Pure <span>Soap</span></h1>
-                <p>Cada sabonete é mais do que um cuidado pessoal: é um gesto de respeito à natureza, que contribui para um planeta mais limpo e para uma pele mais saudável.</p>
-                <a href="#produtos" class="btn">Conheça nossos produtos</a>
+            <div class="inicio-content">
+                <h1 data-aos="fade-down">Pure <span>Soap</span></h1>
+                <p data-aos="fade-up" data-aos-delay="200">Cada sabonete é mais do que um cuidado pessoal: é um gesto de respeito à natureza.</p>
+                <a href="#produtos" class="btn-cta" data-aos="fade-up" data-aos-delay="400">Conheça nossos produtos</a>
             </div>
         </section>
 
         <section id="sobre">
-            <img src="./assets/images/logo.png" alt="Logo do projeto PureSoap" class="logoSobre">
-            <div class="sobreOutdoor">
-                <h2>Sobre o PureSoap</h2>
-                <p>O PureSoap é um sabonete ecológico, feito com ingredientes naturais e sustentáveis. Nosso objetivo é oferecer uma alternativa saudável e amiga do meio ambiente para o cuidado diário da pele.</p>
-                <p>Utilizamos métodos de preparo sustentáveis, como a saponificação a frio, que preserva os nutrientes dos óleos vegetais e reduz o consumo de energia. O resultado é um produto gentil com sua pele e com o meio ambiente.</p>
+            <div class="sobre-container">
+                <div class="sobre-logo" data-aos="fade-right">
+                    <img src="img/logo2.png" alt="Logo PureSoap com fundo roxo">
+                </div>
+                <div class="sobre-texto" data-aos="fade-left" data-aos-delay="200">
+                    <h2>Sobre o PureSoap</h2>
+                    <p>Na <strong>PureSoap</strong>, cada sabonete é feito com ingredientes naturais e sustentáveis para cuidar da sua pele e respeitar o meio ambiente.</p>
+                    <p>Cada barra é preparada artesanalmente, garantindo qualidade e um toque especial em cada detalhe.</p>
+                </div>
+            </div>
+            <div class="sobre-missao-visao" data-aos="fade-up">
+                <div class="card">
+                    <h3>Missão</h3>
+                    <p>"Produzir sabonetes artesanais de alta qualidade, valorizando a agricultura familiar e o desenvolvimento comunitário."</p>
+                </div>
+                <div class="card">
+                    <h3>Visão</h3>
+                    <p>"Ser referência em cosméticos sustentáveis, reconhecida pelo impacto positivo na economia local."</p>
+                </div>
             </div>
         </section>
 
         <section id="produtos">
-            <div class="produtosContainer">
-                <div class="produto">
-                    <h2>Lavanda Calmante</h2>
-                    <img src="" alt="">
+            <h2 class="produtos__titulo" data-aos="fade-up">Nossos Produtos</h2>
+            <div class="produtos__container">
+                <div class="produto-card">
+                    <img src="img/Lavanda.png" alt="Sabonete de Lavanda" class="produto-card__imagem">
+                    <h3 class="produto-card__nome">Lavanda</h3>
+                    <p class="produto-card__descricao">Relaxante e suave, perfeito para um banho calmante.</p>
+                </div>
+                <div class="produto-card">
+                    <img src="img/Hortela.png" alt="Sabonete de Hortelã" class="produto-card__imagem">
+                    <h3 class="produto-card__nome">Hortelã</h3>
+                    <p class="produto-card__descricao">Refrescante e natural, ideal para o cuidado diário.</p>
+                </div>
+                <div class="produto-card">
+                    <img src="img/capimlimao.png" alt="Sabonete de Capim Limão" class="produto-card__imagem">
+                    <h3 class="produto-card__nome">Capim-Limão</h3>
+                    <p class="produto-card__descricao">Revitalizante com aroma cítrico para renovar energias.</p>
+                </div>
+            </div>
+            <div class="produtos__cta-container" data-aos="fade-up">
+                <a href="#" class="btn-cta">Ver Coleção Completa</a>
+            </div>
+            <div class="beneficios__container">
+                <div class="beneficio-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/nature.webp" alt="Ícone de folha">
+                    <h4>100% Natural</h4>
+                    <p>Ingredientes puros e livres de químicos.</p>
+                </div>
+                <div class="beneficio-item" data-aos="fade-up" data-aos-delay="250">
+                    <img src="img/cruety.webp" alt="Ícone de coelho">
+                    <h4>Cruelty-Free</h4>
+                    <p>Não realizamos testes em animais.</p>
+                </div>
+                <div class="beneficio-item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="img/sustentavel.png" alt="Ícone de reciclagem">
+                    <h4>Embalagem Sustentável</h4>
+                    <p>Cuidamos do planeta em cada detalhe.</p>
                 </div>
             </div>
         </section>
+
+        <section id="contato">
+            <div class="contato-container" data-aos="fade-up">
+                <h2>Contato</h2>
+                <form id="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                    <div id="form-response"></div>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">&copy; 2025 PureSoap. Todos os direitos reservados.</p>
+            <nav class="footer-nav">
+                <a href="#">Política de Privacidade</a>
+                <span>|</span>
+                <a href="#">Termos de Serviço</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>

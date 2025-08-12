@@ -1,0 +1,107 @@
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
+    padding: 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 480px;
+    padding: 150px 45px 45px; 
+    background-color: var(--cor-secundaria);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(93, 58, 155, 0.1);
+    text-align: center;
+    position: relative; 
+}
+
+.login-logo-link {
+    position: absolute; 
+    top: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login-logo {
+    height: 250px;
+    width: auto;
+}
+
+.login-container h2 {
+    font-size: 1.8rem;
+    color: var(--cor-texto-escuro);
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    color: var(--cor-texto-secundario, #555);
+    margin-bottom: 30px;
+}
+
+#login-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+#login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: var(--peso-fonte-semibold);
+}
+
+#login-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+}
+
+#login-form input:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+}
+
+#login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: var(--peso-fonte-semibold);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form button:hover {
+    background-color: #4a2e7c;
+}
+
+.login-footer {
+    margin-top: 25px;
+    font-size: 0.9rem;
+}
+
+.login-footer p {
+    margin-bottom: 15px;
+}
+
+.login-footer a {
+    color: var(--cor-primaria);
+    font-weight: var(--peso-fonte-semibold);
+    text-decoration: underline;
+}
+
+.login-footer .back-to-home {
+    text-decoration: none;
+    color: var(--cor-texto-secundario);
+}

@@ -1,0 +1,112 @@
+#produtos {
+    background-color: var(--cor-fundo);
+    padding: 100px 5%;
+}
+
+.produtos__titulo {
+    font-size: 2.8rem;
+    color: var(--cor-primaria);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.produtos__container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produto-card {
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(93, 58, 155, 0.1);
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(93, 58, 155, 0.15);
+}
+
+.produto-card__imagem {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 25px;
+}
+
+.produto-card__nome {
+    font-size: 1.5rem;
+    color: var(--cor-texto-escuro);
+    font-weight: var(--peso-fonte-semibold);
+    margin-bottom: 10px;
+}
+
+.produto-card__descricao {
+    font-size: 1rem;
+    color: var(--cor-texto-secundario, #555);
+    line-height: 1.6;
+}
+
+.produtos__cta-container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 15px 35px;
+    border-radius: var(--raio-borda-botao);
+    font-weight: var(--peso-fonte-bold, 700);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cta:hover {
+    background-color: #4a2e7c;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.beneficios__container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.beneficio-item {
+    max-width: 250px;
+}
+
+.beneficio-item img {
+    height: 85px;
+    margin-bottom: 20px;
+}
+
+.beneficio-item h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: var(--cor-texto-escuro);
+}
+
+.beneficio-item p {
+    color: var(--cor-texto-secundario);
+    line-height: 1.5;
+}
